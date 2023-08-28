@@ -9,6 +9,9 @@ import { ProductsComponent } from './Mycomponents/products/products.component';
 import { LoginComponent } from './Mycomponents/login/login.component';
 import { CartComponent } from './Mycomponents/cart/cart.component';
 import { FooterComponent } from './Mycomponents/footer/footer.component';
+import { SignupComponent } from './Mycomponents/signup/signup.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,15 @@ import { FooterComponent } from './Mycomponents/footer/footer.component';
     ProductsComponent,
     LoginComponent,
     CartComponent,
-    FooterComponent
+    FooterComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

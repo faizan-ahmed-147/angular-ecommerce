@@ -4,6 +4,7 @@ import { HomeComponent } from './Mycomponents/home/home.component';
 import { ProductsComponent } from './Mycomponents/products/products.component';
 import { CartComponent } from './Mycomponents/cart/cart.component';
 import { LoginComponent } from './Mycomponents/login/login.component';
+import { SignupComponent } from './Mycomponents/signup/signup.component';
 
 const routes: Routes = [
   {
@@ -15,13 +16,17 @@ const routes: Routes = [
     component: ProductsComponent
   },
   {
+    path: "register",
+    component: SignupComponent
+  },
+  {
     path: "login",
     component: LoginComponent
   },
   {
     path: "cart",
     component: CartComponent
-  }
+  },
 
 ];
 
